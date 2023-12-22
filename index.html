@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact:Christopher Lowenthal</title>
+		<link rel="stylesheet" href="./assets/css/style.css"/>
+	</head>
+	<body>
+		<section>
+			<header id="header-footer" class="header-container">
+				<h1>Welcome to my contact page!</h1>
+				<nav>
+					<a href="https://github.com/Clowenthal" target="_blank">GitHub</a>
+					<a href="https://www.linkedin.com/in/chris-lowenthal-259085289" target="_blank">LinkedIn</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</header>
+		</section>
+		<main>
+			<div>
+				<h2>Chris Lowenthal</h2>
+				<figure>
+					<img src="C:\Users\chris\OneDrive\Desktop\bootcamp\landing-page-demo\landing-page-demo\assets\image\IMG_0522.jpg" alt="Christopher Lowenthal";>
+					<img src="C:\Users\chris\OneDrive\Pictures\Beavis funny.gif" alt="beavis funny";>
+					<img src="C:\Users\chris\OneDrive\Pictures\IMG_1479.jpg" alt="happy together";>
+				</figure>
+			</div>
+			<section id="contact">
+				<h3>Contact Me</h3>
+					<section class="contact-form-container">
+						<form id="form">Contact Form</form>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required>
+
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required>
+
+							<label for="phone">Phone:</label>
+							<input type="tel" id="phone" name="phone" required>
+
+							<button id="button" type="button">Submit</button>
+								
+								<aside id="modal">
+									<p>Your form has been submitted and we will reach out to you as soon as possible!</p>
+									<button onclick="closeModal()">Close</button>
+								</aside>
+
+								<script>
+									document.addEventListener("DOMContentLoaded", function() {
+										var button = document.getElementById("button");
+										var modalWrapper = document.getElementById("modal");
+										
+										button.addEventListener("click", function() {
+											modalWrapper.style.display = "block";
+										});
+									});
+
+									function closeModal() {
+										var modalWrapper = document.getElementById("modal");
+										modalWrapper.style.display = "none";
+									}
+								</script>
+					</section>
+
+			</section>
+		</main>
+		<footer id="header-footer">&copy; 2023 Lowenthal Corp. </footer>
+	</body>
+</html>
